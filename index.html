@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>example</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      .is-center-vertically {
+        display: flex;
+        align-items: center;
+      }
+      .is-end-vertically {
+        display: flex;
+        align-items: end;
+      }
+      .is-start-vertically {
+        display: flex;
+        align-items: start;
+      }
+      .is-center-horizontally {
+        display: flex;
+        justify-content: center;
+      }
+      .is-end-horizontally {
+        display: flex;
+        justify-content: end;
+      }
+      .is-start-horizontally {
+        display: flex;
+        justify-content: start;
+      }
+      .is-center {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+     
+      /*----------------------------------------------------*/
+      body {
+        background-color: black;
+      }
+      nav {
+        width: 100%;
+        height: 10rem;
+      }
+      #navlinks > a {
+        color: white;
+        font-family: "Sarabun", sans-serif;
+        font-size: 1.25rem;
+        text-decoration: none;
+        margin-inline: 0 3rem;
+        font-weight: 100;
+      }
+      main {
+        height: calc(100vh - 10rem);
+        width: 100%;
+        padding-left: 76px;
+      }
+
+      .columns:nth-child(1) {
+        width: 40%;
+        height: 100%;
+        padding-top: 50px;
+      }
+      .columns:nth-child(2) {
+        width: 60%;
+        height: 100%;
+      }
+      .columns:nth-child(2) img {
+        height: 90%;
+        width: 100%;
+      }
+      h1 {
+        color: white;
+        font-family: 'Poppins';
+        font-weight: 300;
+        font-size: 4rem;
+        gap: 5px;
+        margin-bottom: 2rem;
+        line-height: 73px;
+      }
+      p {
+        color: #8b8989;
+        font-size: 1.5rem;
+        font-family: "Sarabun", sans-serif;
+        line-height: 32.5px;
+      }
+      button {
+        margin-top: 4rem;
+        background-color: #a95e5b;
+        padding: 10px 20px;
+        border: 0;
+        border-radius: 10px;
+        cursor: pointer;
+        font-family: "Sarabun", sans-serif;
+        color: white;
+      }
+      @media (max-width: 865px) {
+        .columns:nth-child(1) {
+          width: 100%;
+          background: #000000b8;
+          padding: 15px 20px;
+          border-radius: 10px;
+          backdrop-filter: blur(11px);
+        }
+        main{
+          padding: 0;
+          align-items: flex-start;
+        }
+        p{
+          color: rgb(189, 189, 189);
+        }
+        .columns:nth-child(2) {
+          width: 100%;
+          position: absolute;
+          z-index: -1;
+          filter: blur(6px);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="is-center">
+      <div id="navlinks">
+        <a href="#">Home</a>
+        <a href="#">Shop</a>
+        <a href="#">About us</a>
+        <a href="#">Contact</a>
+        <a href="#">Blog</a>
+      </div>
+    </nav>
+    <main class="is-center">
+      <div class="columns is-center-horizontally">
+        <div id="title">
+          <h1>
+            Sound you <br />
+            can see
+          </h1>
+          <p>
+            headphones that makes you forget everything around Disconnect
+            from the outer world.
+          </p>
+          <button>Shop Product</button>
+        </div>
+      </div>
+      <div class="columns is-center-horizontally is-start-vertically">
+        <img src="https://jmp.sh/zqGEKSzl" alt="" />
+      </div>
+    </main>
+  </body>
+</html>
